@@ -7,6 +7,9 @@
     <title>Pre-Entrega E-commerce JBL</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -18,13 +21,35 @@
     </header>
 
     <!-- Navigation -->
-    <nav>
+    <!-- <nav>
         <ul>
             <li><a href="#productos">Productos</a></li>
             <li><a href="#reseñas">Reseñas</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+            <li><a href="#contacto">Contacto</a></li> -->
+            <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark" style="">
+                <div class="bg-dark p-4">
+                  <h5 class="text-body-emphasis h4">Menú</h5>
+                  
+                  <ul>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#reseñas">Reseñas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                  </ul>
+                  
+                </div>
+              </div>
+              <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </nav>
+         <!-- Carrito -->
+    <div id="carrito" class="carrito"></div>
+    <button id="abrir-carrito">🛒</button>  
+
+
 
     <!-- Main Content -->
     <main>
@@ -32,45 +57,16 @@
         <!-- Sección de Productos -->
         <section id="productos">
             <h2>Productos</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <a href="producto1.html">
-                        <img src="aseets/auricularesVincha.webp" alt="JBL Vincha">
-                        <h3>Auriculares Inalámbricos Jbl Tune 520bt Negro</h3>
-                        <p>Auricular Inalambrico</p>
-                        <p>Precio: $62.410,00</p>
-                </div>
-                <div class="product-card">
-                    <a href="producto2.html">
-                        <img src="aseets/clip4.webp" alt="jbl clip 4">
-                        <h3>JBL Clip 4 Red</h3>
-                        <p>Parlante totalmente inalámbricos con gran autonomía.</p>
-                        <p>Precio: $82.999</p>
-                </div>
-                <div class="product-card">
-                    <a href="producto3.html">
-                        <img src="aseets/go4.webp" alt="Parlante Portátil Jbl Go 4">
-                        <h3>Parlante Portátil Jbl Go 4</h3>
-                        <p>Experiencia inmersiva con hasta 7 horas de batería.</p>
-                        <p>Precio: $75.999</p>
-                </div>
-                <div class="product-card">
-                    <a href="producto4.html">
-                        <img src="aseets/wabe.webp" alt="Auricular Jbl Wave Buds">
-                        <h3>Auricular Jbl Wave Buds</h3>
-                        <p>Auriculares resistentes al agua para entrenamiento.</p>
-                        <p>Precio: $112.999</p></a>
-                </div>
-            </div>
+            <div class="product-grid"></div>
         </section>
 
         <!-- Sección de Reseñas -->
         <section id="reseñas">
             <h2>Reseñas</h2>
             <div class="review-grid">
-                <div class="review-card">"Excelente calidad de sonido y confort." - Ana, 29.</div>
-                <div class="review-card">"Duración de batería increíble." - Carlos, 53.</div>
-                <div class="review-card">"Perfectos para el gimnasio, resistentes al agua." - Luisa, 37.</div>
+                <div class="review-card">"Excelente calidad de sonido y confort." - Ana, 29.</div><br>
+                <div class="review-card">"Duración de batería increíble." - Carlos, 53.</div><br>
+                <div class="review-card">"Perfectos para el gimnasio, resistentes al agua." - Luisa, 37.</div><br>
                 <div class="review-card">"Precio justo para su calidad." - Pedro, 25.</div>
             </div>
         </section>
@@ -97,11 +93,17 @@
 
     </main>
 
+   
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 JBL E-commerce. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 
 </html>
