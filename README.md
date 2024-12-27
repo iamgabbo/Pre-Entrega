@@ -12,7 +12,7 @@ Enlace a páginas de producto: Cada producto enlaza a una página individual con
 Cada producto tiene su propia página con una descripción más detallada.
 Incluyen un botón para volver a la tienda.
 3. Carrito de Compras
-Botón flotante de carrito: Siempre visible en la esquina superior derecha del index.
+Botón flotante de carrito: Visible en la esquina superior derecha del index.
 Vista del carrito: Muestra los productos añadidos al carrito, incluyendo imagen, nombre, cantidad y precio.
 Controles de cantidad: Permite aumentar, disminuir o eliminar productos del carrito.
 Persistencia del carrito: Los datos se almacenan en localStorage, lo que permite mantener el carrito.
@@ -36,38 +36,10 @@ Gestión de eventos como clics en botones de "Comprar" o "Eliminar".
 Persistencia del carrito usando localStorage.
 Formspree: Para el manejo del formulario de contacto.
 Google Fonts: Para un diseño tipográfico moderno y legible.
-Cómo Usar Este Proyecto
-1. Clonar el Repositorio
-Clona este repositorio en tu máquina local:
 
-bash
-Copiar código
-git clone <URL_DEL_REPOSITORIO>
-2. Abrir en el Navegador
-Abre el archivo index.html en tu navegador para explorar el sitio.
 
-3. Navegar por el Sitio
-Explora los productos en la página principal.
-Haz clic en un producto para ver su descripción detallada.
-Añade productos al carrito desde cualquier página.
-Consulta el carrito desde el botón flotante en la esquina superior derecha.
-Envía un mensaje a través del formulario de contacto.
-Funcionalidades Adicionales
-Carrito de Compras
-Agregar Productos: Puedes agregar productos desde la página principal o las páginas individuales.
-Vista del Carrito: Muestra los productos con:
-Imagen.
-Nombre.
-Cantidad.
-Precio unitario y total.
-Editar y Eliminar Productos: Cambia la cantidad o elimina productos directamente desde el carrito.
-Persistencia: El carrito conserva los productos añadidos incluso después de recargar la página o navegar entre diferentes páginas.
-Validación del Formulario
-El botón "Enviar" está deshabilitado hasta que todos los campos estén completos.
-Muestra un mensaje si intentas enviar el formulario incompleto.
-Estructura del Proyecto
-css
-Copiar código
+Estructura del Proyecto:
+
 ecommerce-jbl/
 ├── index.html          # Página principal del sitio
 ├── producto1.html      # Página del producto 1
